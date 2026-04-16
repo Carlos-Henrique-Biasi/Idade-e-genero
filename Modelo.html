@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            Ano de nascimento:
+            <input type="number" name="idade" id="idade" min="0"><!--idade minima (min)-->
+        </div>
+        <div>Sexo:
+            <input type="radio" name="sexo" id="masc" checked>
+             <label for="masc">Masculino</label><!--o masc do for é o nomme sendo usado ppara atribuição-->
+            <input type="radio" name="sexo" id="femi"><!--PRecisa colocar o mesmo nome pois ai ele deixa marcar apenas 1 botão-->
+            <label for="femi">feminino</label>
+        </div>
+        <div>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res">
+            Preencha as informações a cima!
+        </div>
+        <div id="resimg">
+            
+        </div>
+    </section>
+    <footer>
+         <p>&copy; CH__BIASI</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
